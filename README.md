@@ -1,3 +1,5 @@
+Markdown
+
 # EO/IR Target Recognition & Classification Platform
 
 [![Framework-Streamlit-red](https://img.shields.io/badge/Framework-Streamlit-red.svg)](https://streamlit.io)
@@ -49,3 +51,58 @@ The application is split into a user-friendly frontend (`app.py`) and a powerful
 ---
 
 ## 📂 Project Structure
+
+.
+├── 📁 flir_images/
+│   └── (Place your thermal .jpg/.png files here)
+├── 📁 output/
+│   └── (Generated videos and logs will be saved here)
+├── 📜 app.py              # The main Streamlit frontend
+├── 📜 backend.py            # Core detection and processing functions
+├── 🎵 alarm.mp3             # Sound file for fire detection alert
+└── 📜 requirements.txt      # Project dependencies
+
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Python 3.9 or higher
+* An active internet connection (for the first run to download the YOLO model)
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
+
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3.  **Install the required dependencies** from the `requirements.txt` file:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Note: You will need to create a `requirements.txt` file by running `pip freeze > requirements.txt` in your activated environment.)*
+
+4.  **Prepare assets:**
+    * Place any thermal images you want to analyze into the `flir_images/` directory.
+    * Ensure the `alarm.mp3` file is present in the root directory for the audio alert feature.
+
+### Running the Application
+
+1.  **Execute the following command in your terminal:**
+    ```bash
+    streamlit run app.py
+    ```
+
+2.  **Open your web browser** and navigate to the local URL provided by Streamlit (usually `http://localhost:8501`).
+
+3.  Use the sidebar to select an analysis mode and follow the on-screen instructions.
