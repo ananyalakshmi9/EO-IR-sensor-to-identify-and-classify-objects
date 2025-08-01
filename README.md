@@ -67,6 +67,12 @@ The application is split into a user-friendly frontend (`app.py`) and a powerful
 
 ## 🚀 Getting Started
 
+### ⚠️ Important Usage Note
+
+For the **"Classify Thermal Imagery (IR)"** mode to work, you must add your own thermal images (e.g., `.jpg`, `.png`) into the `flir_images/` directory.
+
+The application reads images directly from this folder.
+
 ### Prerequisites
 
 * Python 3.9 or higher
