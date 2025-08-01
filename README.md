@@ -53,7 +53,7 @@ The application is split into a user-friendly frontend (`app.py`) and a powerful
 ## 📂 Project Structure
 
 .
-'''
+```
 ├── 📁 flir_images/
 │   └── (Place your thermal .jpg/.png files here)
 ├── 📁 output/
@@ -62,7 +62,7 @@ The application is split into a user-friendly frontend (`app.py`) and a powerful
 ├── 📜 backend.py            # Core detection and processing functions
 ├── 🎵 alarm.mp3             # Sound file for fire detection alert
 └── 📜 requirements.txt      # Project dependencies
-'''
+```
 
 ---
 
